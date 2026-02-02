@@ -1,0 +1,32 @@
+<div class="container">
+ <button class="btn btn-primary mb-3" [routerLink]="['/adduser']">create User</button>
+    <h2 class="text-center m-4">User List</h2>
+  <table class ="table table-success table-striped">
+    <thead>
+      <tr>
+        <th class="col-1">ID</th>
+        <th class="col-1">Name</th>
+        <th class="col-2">Username</th>
+        <th class="col-3">Email</th>
+        <th class="col-2">Mobile</th>
+        <th class="col-1">Update</th>
+        <th class="col-1">View</th>
+        <th class="col-1">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userdata">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.mobile}}</td>
+        <td><button class="btn btn-warning btn-sm m-1" (click)="updateUser(user.id)">Update</button></td>
+        <td><button class="btn btn-secondary btn-sm m-1" [routerLink]="['/viewuser', user.id]">View</button></td>
+        <td><button class="btn btn-danger btn-sm m-1" (click)="deleteUser(user.id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<router-outlet></router-outlet>

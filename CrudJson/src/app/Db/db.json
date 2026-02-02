@@ -1,0 +1,25 @@
+{
+  "User": [
+    {
+      "id": "2",
+      "name": "Shubham",
+      "username": "ShirfuleS",
+      "email": "Shirfule@shshsgmail.com",
+      "mobile": "+917720834143"
+    },
+    {
+      "id": "81e1",
+      "name": "teja",
+      "username": "bhabhul",
+      "email": "teja@bhabul12gmail.com",
+      "mobile": 9897766666
+    },
+    {
+      "name": "tejas",
+      "username": "bhaaaaaaaaaaaaa",
+      "email": "kavita@tejas",
+      "mobile": 7720834143,
+      "id": "1304"
+    }
+  ]
+}
